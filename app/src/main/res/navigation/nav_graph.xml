@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homePage">
+
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.berkkanrencber.movieappjetpackcompose.ui.screen.homepage.HomePage"
+        android:label="HomePage" >
+        <action
+            android:id="@+id/action_homePage_to_detailPage"
+            app:destination="@id/detailPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritePage"
+        android:name="com.berkkanrencber.movieappjetpackcompose.ui.screen.favoritepage.FavoritePage"
+        android:label="FavoritePage" >
+        <action
+            android:id="@+id/action_favoritePage_to_detailPage"
+            app:destination="@id/detailPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchPage"
+        android:name="com.berkkanrencber.movieappjetpackcompose.ui.screen.searchpage.SearchPage"
+        android:label="SearchPage" >
+        <action
+            android:id="@+id/action_searchPage_to_detailPage"
+            app:destination="@id/detailPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPage"
+        android:name="com.berkkanrencber.movieappjetpackcompose.ui.screen.detailpage.DetailPage"
+        android:label="DetailPage" >
+        <argument
+            android:name="movieId"
+            app:argType="string"
+            app:nullable="false"/>
+        <action
+            android:id="@+id/action_detailPage_self"
+            app:destination="@id/detailPage" />
+    </fragment>
+</navigation>
