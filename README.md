@@ -1,6 +1,6 @@
-# MovieApp 🎬
+# MovieAppJetpackCompose 🎬
 
-**MovieApp** is a mobile application developed for the Android platform using the Kotlin programming language. This application provides users with information about popular, top-rated, currently showing, and upcoming movies. Users can search for movies, view movie details, and add movies to their favorites list.
+**MovieAppJetpackCompose** is a mobile application developed for the Android platform using the Kotlin programming language. This application provides users with information about popular, top-rated, currently showing, and upcoming movies. Users can search for movies, view movie details, and add movies to their favorites list.
 
 ## Features 📱
 
@@ -33,7 +33,7 @@
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/berkkanrencber/MovieApp.git
+    git clone https://github.com/berkkanrencber/MovieAppJetpackCompose.git
     ```
 2. Open Android Studio and import the project folder.
 3. Sync the project to ensure all dependencies are installed.
